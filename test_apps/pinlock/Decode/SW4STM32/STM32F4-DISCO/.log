@@ -1,0 +1,1045 @@
+Makefile:235: warning: overriding recipe for target 'bin/PinLock--filename-no-opt--mpu-8--hexbox--final.elf'
+Makefile:226: warning: ignoring old recipe for target 'bin/PinLock--filename-no-opt--mpu-8--hexbox--final.elf'
+export C_INCLUDE_PATH=/home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/include
+/home/clemen19/open_source_code/ACES//gcc/bins//bin/arm-none-eabi-ld .build/startup_stm32f407xx.o .build/main.o .build/stm32f4xx_it.o .build/system_stm32f4xx.o .build/stm32f4xx_hal_msp.o .build/stm32f4xx_hal_uart.o .build/stm32f4xx_hal.o .build/stm32f4xx_hal_cortex.o .build/stm32f4xx_hal_dma.o .build/stm32f4xx_hal_dma_ex.o .build/stm32f4xx_hal_flash.o .build/stm32f4xx_hal_flash_ex.o .build/stm32f4xx_hal_gpio.o .build/stm32f4xx_hal_hcd.o .build/stm32f4xx_hal_i2c.o .build/stm32f4xx_hal_i2c_ex.o .build/stm32f4xx_hal_pwr.o .build/stm32f4xx_hal_pwr_ex.o .build/stm32f4xx_hal_rcc.o .build/stm32f4xx_hal_rcc_ex.o .build/stm32f4xx_hal_rtc.o .build/stm32f4xx_hal_spi.o .build/stm32f4xx_ll_usb.o .build/stm32f4_discovery.o .build/sha256.o /home/clemen19/open_source_code/ACES/llvm/hexbox-rt-lib/syscalls-v7e-m.o	-plugin=/home/clemen19/open_source_code/ACES//llvm/bins/lib/LLVMgold.so --plugin-opt=save-temps -g --plugin-opt=-mcpu=cortex-m4 --plugin-opt=-float-abi=soft --plugin-opt=O0 --start-group -lc -lm -lgcc --end-group -L /home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/lib/thumb/v7e-m -L /home/clemen19/open_source_code/ACES/gcc/bins//lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m  -lc -lm  -Map=.build/PinLock--filename-no-opt--mpu-8.map --gc-sections -TSTM32F407VGTx_FLASH.ld \
+--plugin-opt=-info-output-file=bin/PinLock--filename-no-opt--mpu-8.elf.stats -o bin/PinLock--filename-no-opt--mpu-8.elf -g
+/home/clemen19/open_source_code/ACES//gcc/bins//bin/arm-none-eabi-size bin/PinLock--filename-no-opt--mpu-8.elf
+   text	   data	    bss	    dec	    hex	filename
+  95896	   2624	  35260	 133780	  20a94	bin/PinLock--filename-no-opt--mpu-8.elf
+/home/clemen19/open_source_code/ACES//gcc/bins//bin/arm-none-eabi-ld .build/startup_stm32f407xx.o bin/PinLock--filename-no-opt--mpu-8.elf.0.5.precodegen.bc -plugin=/home/clemen19/open_source_code/ACES//llvm/bins/lib/LLVMgold.so --plugin-opt=save-temps -g --plugin-opt=-mcpu=cortex-m4 --plugin-opt=-float-abi=soft --plugin-opt=O0 --start-group -lc -lm -lgcc --end-group -L /home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/lib/thumb/v7e-m -L /home/clemen19/open_source_code/ACES/gcc/bins//lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m  -lc -lm  -Map=.build/PinLock--filename-no-opt--mpu-8.map --gc-sections -TSTM32F407VGTx_FLASH.ld \
+--plugin-opt=-info-output-file=.build/hexbox/hexbox-analysis--filename-no-opt--mpu-8.json.stats -o .build/hexbox/hexbox-analysis--filename-no-opt--mpu-8.json -g \
+--plugin-opt=-hexbox-analysis-results=.build/hexbox/hexbox-analysis--filename-no-opt--mpu-8.json \
+--plugin-opt=-hexbox-analysis-size=.build/hexbox/hexbox-size--filename-no-opt--mpu-8.json \
+-o bin/PinLock--filename-no-opt--mpu-8--baseline.elf >/dev/null 2>/dev/null
+python /home/clemen19/open_source_code/ACES//compiler/graph_analysis/analyzer.py -j=.build/hexbox/hexbox-analysis--filename-no-opt--mpu-8.json -s=.build/hexbox/hexbox-size--filename-no-opt--mpu-8.json \
+  -o=.build/hexbox/hexbox-policy--filename-no-opt--mpu-8.json -T=STM32F407VGTx_FLASH.ld -L=.build/hexbox/hexbox-intermediate--filename-no-opt--mpu-8.ld \
+  -m=filename-no-opt -b=STM32F479 -n=8
+/home/clemen19/open_source_code/ACES//compiler/graph_analysis/analyzer.py:815: SyntaxWarning: name 'MAX_DATA_REGIONS' is assigned to before global declaration
+  global MAX_DATA_REGIONS
+Merging By filename, Opt:  False
+Data min_cost (None, None, None)
+Data min_cost ('.DATA_REGION_6_', '.DATA_REGION_4_', 1)
+Data min_cost ('.DATA_REGION_6_', '.DATA_REGION_4_', 1)
+Data min_cost ('.DATA_REGION_6_', '.DATA_REGION_4_', 1)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+/home/clemen19/open_source_code/ACES//gcc/bins//bin/arm-none-eabi-ld .build/startup_stm32f407xx.o bin/PinLock--filename-no-opt--mpu-8.elf.0.5.precodegen.bc /home/clemen19/open_source_code/ACES//llvm/hexbox-rt-lib/record-hexbox-rt-v7e-m.o -plugin=/home/clemen19/open_source_code/ACES//llvm/bins/lib/LLVMgold.so --plugin-opt=save-temps -g --plugin-opt=-mcpu=cortex-m4 --plugin-opt=-float-abi=soft --plugin-opt=O0 --start-group -lc -lm -lgcc --end-group -L /home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/lib/thumb/v7e-m -L /home/clemen19/open_source_code/ACES/gcc/bins//lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m  -lc -lm  -Map=.build/PinLock--filename-no-opt--mpu-8.map --gc-sections \
+    --plugin-opt=-info-output-file=bin/PinLock--filename-no-opt--mpu-8--hexbox--inter.elf.stats \
+    --plugin-opt=-hexbox-policy=.build/hexbox/hexbox-policy--filename-no-opt--mpu-8.json \
+    -T.build/hexbox/hexbox-intermediate--filename-no-opt--mpu-8.ld \
+    -o bin/PinLock--filename-no-opt--mpu-8--hexbox--inter.elf
+----------- Building Meta Data --------------------
+Function: main
+Callee: mbedtls_sha256
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: mbedtls_sha256
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: HAL_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: HAL_UART_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: lock
+Callee: BSP_LED_Off
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: print
+Callee: HAL_UART_Transmit_IT
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: rx_from_uart
+Callee: HAL_UART_Receive_IT
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: unlock
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_On
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Error_Handler
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Off
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+Found Declaration in call: memset
+Function: mbedtls_sha256_init
+  %call = call i8* @memset(i8* %1, i32 0, i32 108) #11, !dbg !1892
+Found Declaration in call: memcpy
+Function: mbedtls_sha256_update
+  %call = call i8* @memcpy(i8* %add.ptr, i8* %19, i32 %20) #11, !dbg !1946
+Found Declaration in call: memcpy
+Function: mbedtls_sha256_update
+  %call27 = call i8* @memcpy(i8* %add.ptr26, i8* %35, i32 %36) #11, !dbg !1981
+----------- Building Meta Data --------------------
+Function: HAL_Init
+Callee: HAL_NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_OscConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_ClockConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_GetREVID
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_Init
+Callee: HAL_UART_MspInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_GetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_EncodePriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_EnableIRQ
+Callee: NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_InitTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_SYSTICK_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SYSTICK_Config
+Callee: SysTick_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriorityGrouping
+Callee: NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SysTick_Handler
+Callee: HAL_IncTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: USART2_IRQHandler
+Callee: HAL_UART_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_IRQHandler
+Callee: HAL_DMA_Abort_IT
+----------- End metadata --------------------
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.mbedtls_sha256_context*
+%struct.__DMA_HandleTypeDef*
+%struct.mbedtls_sha256_context*
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+----------- Building Meta Data --------------------
+Function: HAL_UART_IRQHandler
+Callee: HAL_UART_ErrorCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_IRQHandler
+Callee: HAL_UART_ErrorCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_IRQHandler
+Callee: HAL_UART_ErrorCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_Receive_IT
+Callee: HAL_UART_RxCpltCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_DMAAbortOnError
+Callee: HAL_UART_ErrorCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_EndTransmit_IT
+Callee: HAL_UART_TxCpltCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: __original_main
+----------- End metadata --------------------
+No Name GV for: "runtime"
+python /home/clemen19/open_source_code/ACES//compiler/graph_analysis/final_linker_gen.py -o=bin/PinLock--filename-no-opt--mpu-8--hexbox--inter.elf \
+		-t=STM32F407VGTx_FLASH.ld -l=.build/hexbox/hexbox-final--filename-no-opt--mpu-8.ld -p=.build/hexbox/hexbox-policy--filename-no-opt--mpu-8.json\
+		-f=.build/hexbox/hexbox-final-policy--filename-no-opt--mpu-8.json
+['bin/PinLock--filename-no-opt--mpu-8--hexbox--inter.elf  :', 'section                  size        addr', '.isr_vector               392   134217728', '.text                    3112   134218120', '.hexbox_rt_code          4072   134221232', '.rodata                  2712   134225312', '.ARM                        8   134228024', '.data                       0   536887296', '.hexbox_rt_ram           2156   536887296', '.CODE_REGION_0_           258   134228032', '.CODE_REGION_10_           66   134228290', '.CODE_REGION_11_           94   134228356', '.CODE_REGION_12_          480   134228450', '.CODE_REGION_1_          1170   134228930', '.CODE_REGION_2_           244   134230100', '.CODE_REGION_3_          1078   134230344', '.CODE_REGION_4_            72   134231422', '.CODE_REGION_5_           428   134231494', '.CODE_REGION_6_           218   134231922', '.CODE_REGION_7_          3588   134232140', '.CODE_REGION_8_          3040   134235728', '.CODE_REGION_9_          3130   134238768', '.IRQ_CODE_REGION           84   134241898', '.stack                  16384   536870912', '.ccmram                     0   268435456', '.bss                        4   536889452', '._user_heap_stack       16384   536889456', '.DATA_REGION_0__data      320   536905840', '.DATA_REGION_0__bss         0   536906160', '.DATA_REGION_1__data       88   536906160', '.DATA_REGION_1__bss       140   536906248', '.DATA_REGION_2__data        0   536906388', '.DATA_REGION_2__bss         4   536906388', '.DATA_REGION_3__data        0   536906392', '.DATA_REGION_3__bss         0   536906392', '.DATA_REGION_5__data        0   536906392', '.DATA_REGION_5__bss         4   536906392', '.DATA_REGION_6__data       20   536906396', '.DATA_REGION_6__bss         0   536906416', '.DATA_REGION_7__data       24   536906416', '.DATA_REGION_7__bss         0   536906440', '.ARM.attributes            50           0', '.debug_info             30556           0', '.debug_abbrev            1573           0', '.debug_aranges             40           0', '.debug_line             15960           0', '.debug_str              10508           0', '.debug_loc               3923           0', '.debug_ranges             616           0', '.debug_macinfo              1           0', '.debug_pubnames          3631           0', '.debug_pubtypes          3462           0', '.comment                   21           0', '.debug_frame             2656           0', 'Total                  132771', '', '', '']
+Default section not present in final binary
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+.CODE_REGION_9_
+Getting MPU Config:  .CODE_REGION_9_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 11
+Size field value: 9
+Size field value: 9
+.CODE_REGION_12_
+Getting MPU Config:  .CODE_REGION_12_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 8
+Size field value: 4
+Size field value: 9
+Size field value: 9
+.CODE_REGION_8_
+Getting MPU Config:  .CODE_REGION_8_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 11
+Size field value: 4
+Size field value: 10
+Size field value: 9
+Size field value: 15
+.CODE_REGION_5_
+Getting MPU Config:  .CODE_REGION_5_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 8
+Size field value: 19
+.DATA_REGION_5_
+.DATA_REGION_3_
+.CODE_REGION_10_
+Getting MPU Config:  .CODE_REGION_10_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 6
+Size field value: 4
+.CODE_REGION_7_
+Getting MPU Config:  .CODE_REGION_7_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 11
+Size field value: 8
+.CODE_REGION_4_
+Getting MPU Config:  .CODE_REGION_4_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 6
+.CODE_REGION_6_
+Getting MPU Config:  .CODE_REGION_6_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 7
+.DATA_REGION_7_
+.DATA_REGION_0_
+.DATA_REGION_1_
+.DATA_REGION_2_
+.CODE_REGION_1_
+Getting MPU Config:  .CODE_REGION_1_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 10
+Size field value: 7
+Size field value: 10
+Size field value: 9
+Size field value: 9
+.CODE_REGION_2_
+Getting MPU Config:  .CODE_REGION_2_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 7
+Size field value: 9
+Size field value: 9
+.CODE_REGION_0_
+Getting MPU Config:  .CODE_REGION_0_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 8
+Size field value: 4
+Size field value: 4
+Size field value: 9
+.CODE_REGION_11_
+Getting MPU Config:  .CODE_REGION_11_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 6
+Size field value: 19
+Size field value: 9
+.DATA_REGION_6_
+.CODE_REGION_3_
+Getting MPU Config:  .CODE_REGION_3_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 10
+Size field value: 10
+Size field value: 9
+Size field value: 12
+Size field value: 9
+.IRQ_CODE_REGION
+Getting MPU Config:  .IRQ_CODE_REGION
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 13
+Size field value: 6
+Size field value: 7
+Size field value: 19
+/home/clemen19/open_source_code/ACES//gcc/bins//bin/arm-none-eabi-ld .build/startup_stm32f407xx.o bin/PinLock--filename-no-opt--mpu-8.elf.0.5.precodegen.bc /home/clemen19/open_source_code/ACES//llvm/hexbox-rt-lib/record-hexbox-rt-v7e-m.o -plugin=/home/clemen19/open_source_code/ACES//llvm/bins/lib/LLVMgold.so --plugin-opt=save-temps -g --plugin-opt=-mcpu=cortex-m4 --plugin-opt=-float-abi=soft --plugin-opt=O0 --start-group -lc -lm -lgcc --end-group -L /home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/lib/thumb/v7e-m -L /home/clemen19/open_source_code/ACES/gcc/bins//lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m  -lc -lm  -Map=.build/PinLock--filename-no-opt--mpu-8.map --gc-sections \
+    --plugin-opt=-info-output-file=bin/PinLock--filename-no-opt--mpu-8--hexbox--record.elf.stats \
+    --plugin-opt=-hexbox-policy=.build/hexbox/hexbox-final-policy--filename-no-opt--mpu-8.json \
+    -T.build/hexbox/hexbox-final--filename-no-opt--mpu-8.ld \
+    -o bin/PinLock--filename-no-opt--mpu-8--hexbox--record.elf
+----------- Building Meta Data --------------------
+Function: main
+Callee: mbedtls_sha256
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: mbedtls_sha256
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: HAL_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Program_Init
+Callee: HAL_UART_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: lock
+Callee: BSP_LED_Off
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: print
+Callee: HAL_UART_Transmit_IT
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: rx_from_uart
+Callee: HAL_UART_Receive_IT
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: unlock
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_On
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Error_Handler
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Off
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+Found Declaration in call: memset
+Function: mbedtls_sha256_init
+  %call = call i8* @memset(i8* %1, i32 0, i32 108) #11, !dbg !1892
+Found Declaration in call: memcpy
+Function: mbedtls_sha256_update
+  %call = call i8* @memcpy(i8* %add.ptr, i8* %19, i32 %20) #11, !dbg !1946
+Found Declaration in call: memcpy
+Function: mbedtls_sha256_update
+  %call27 = call i8* @memcpy(i8* %add.ptr26, i8* %35, i32 %36) #11, !dbg !1981
+----------- Building Meta Data --------------------
+Function: HAL_Init
+Callee: HAL_NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_OscConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_ClockConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_GetREVID
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_Init
+Callee: HAL_UART_MspInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK2Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_SetConfig
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_GetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_EncodePriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_EnableIRQ
+Callee: NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_InitTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_SYSTICK_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SYSTICK_Config
+Callee: SysTick_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriorityGrouping
+Callee: NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SysTick_Handler
+Callee: HAL_IncTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: USART2_IRQHandler
+Callee: HAL_UART_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_IRQHandler
+Callee: HAL_DMA_Abort_IT
+----------- End metadata --------------------
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.mbedtls_sha256_context*
+%struct.__DMA_HandleTypeDef*
+%struct.mbedtls_sha256_context*
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.UART_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+----------- Building Meta Data --------------------
+Function: HAL_UART_IRQHandler
+Callee: HAL_UART_ErrorCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_IRQHandler
+Callee: HAL_UART_ErrorCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_UART_IRQHandler
+Callee: HAL_UART_ErrorCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_Receive_IT
+Callee: HAL_UART_RxCpltCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_DMAAbortOnError
+Callee: HAL_UART_ErrorCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: UART_EndTransmit_IT
+Callee: HAL_UART_TxCpltCallback
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: __original_main
+----------- End metadata --------------------
+No Name GV for: "runtime"
+make: *** No rule to make target '.build/hexbox/mem_accesses--filename-no-opt--mpu-8.o', needed by 'bin/PinLock--filename-no-opt--mpu-8--hexbox--final.elf'.  Stop.

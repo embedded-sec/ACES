@@ -1,0 +1,12 @@
+*.dot
+*.build/
+Makefile
+*bin/
+*.org
+startup*.s
+*.ld
+run
+run.tmp
+*.tmp
+*.asm
+temp.*

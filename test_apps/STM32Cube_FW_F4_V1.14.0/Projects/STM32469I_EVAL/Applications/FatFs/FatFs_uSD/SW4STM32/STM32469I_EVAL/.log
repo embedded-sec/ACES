@@ -1,0 +1,5840 @@
+export C_INCLUDE_PATH=/home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/include
+/home/clemen19/open_source_code/ACES/gcc/bins//bin/arm-none-eabi-ld .build/startup_stm32f469xx.o .build/stm32f4xx_hal_rcc.o .build/stm32f4xx_hal_gpio.o .build/stm32f4xx_hal.o .build/stm32f4xx_ll_fmc.o .build/diskio.o .build/stm32f4xx_hal_i2c.o .build/stm32f4xx_hal_flash.o .build/main.o .build/stm32f4xx_it.o .build/stm32469i_eval_sd.o .build/stm32f4xx_hal_sdram.o .build/stm32f4xx_hal_sram.o .build/stm32f4xx_ll_sdmmc.o .build/stm32f4xx_hal_rng.o .build/system_stm32f4xx.o .build/stm32f4xx_hal_cortex.o .build/mfxstm32l152.o .build/stm32469i_eval_io.o .build/stm32f4xx_hal_sd.o .build/ff.o .build/stm32469i_eval_sdram.o .build/stm32f4xx_hal_flash_ex.o .build/stm32f4xx_hal_uart.o .build/ff_gen_drv.o .build/stm32f4xx_hal_dma.o .build/stm32f4xx_hal_rcc_ex.o .build/stm32f4xx_hal_pwr_ex.o .build/stm32469i_eval.o .build/sd_diskio.o .build/stm32f4xx_hal_pwr.o .build/stm32f4xx_hal_crc.o /home/clemen19/open_source_code/ACES/llvm/hexbox-rt-lib/syscalls-v7e-m.o	-plugin=/home/clemen19/open_source_code/ACES/llvm/bins/lib/LLVMgold.so --plugin-opt=save-temps -g --plugin-opt=-mcpu=cortex-m4 --plugin-opt=-float-abi=soft --plugin-opt=O0 --start-group -lc -lm -lgcc --end-group -L /home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/lib/thumb/v7e-m -L /home/clemen19/open_source_code/ACES/gcc/bins//lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m  -lc -lm  -Map=.build/FatFs-uSD--filename-no-opt--mpu-8.map --gc-sections -TSTM32F469NIHx_FLASH.ld \
+--plugin-opt=-info-output-file=bin/FatFs-uSD--filename-no-opt--mpu-8.elf.stats -o bin/FatFs-uSD--filename-no-opt--mpu-8.elf -g
+/home/clemen19/open_source_code/ACES/gcc/bins//bin/arm-none-eabi-size bin/FatFs-uSD--filename-no-opt--mpu-8.elf
+   text	   data	    bss	    dec	    hex	filename
+ 110424	    200	   6772	 117396	  1ca94	bin/FatFs-uSD--filename-no-opt--mpu-8.elf
+/home/clemen19/open_source_code/ACES/gcc/bins//bin/arm-none-eabi-ld .build/startup_stm32f469xx.o bin/FatFs-uSD--filename-no-opt--mpu-8.elf.0.5.precodegen.bc -plugin=/home/clemen19/open_source_code/ACES/llvm/bins/lib/LLVMgold.so --plugin-opt=save-temps -g --plugin-opt=-mcpu=cortex-m4 --plugin-opt=-float-abi=soft --plugin-opt=O0 --start-group -lc -lm -lgcc --end-group -L /home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/lib/thumb/v7e-m -L /home/clemen19/open_source_code/ACES/gcc/bins//lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m  -lc -lm  -Map=.build/FatFs-uSD--filename-no-opt--mpu-8.map --gc-sections -TSTM32F469NIHx_FLASH.ld \
+--plugin-opt=-info-output-file=.build/hexbox/hexbox-analysis--filename-no-opt--mpu-8.json.stats -o .build/hexbox/hexbox-analysis--filename-no-opt--mpu-8.json -g \
+--plugin-opt=-hexbox-analysis-results=.build/hexbox/hexbox-analysis--filename-no-opt--mpu-8.json \
+--plugin-opt=-hexbox-analysis-size=.build/hexbox/hexbox-size--filename-no-opt--mpu-8.json \
+-o bin/FatFs-uSD--filename-no-opt--mpu-8--baseline.elf >/dev/null 2>/dev/null
+python /home/clemen19/open_source_code/ACES/compiler/graph_analysis/analyzer.py -j=.build/hexbox/hexbox-analysis--filename-no-opt--mpu-8.json -s=.build/hexbox/hexbox-size--filename-no-opt--mpu-8.json \
+  -o=.build/hexbox/hexbox-policy--filename-no-opt--mpu-8.json -T=STM32F469NIHx_FLASH.ld -L=.build/hexbox/hexbox-intermediate--filename-no-opt--mpu-8.ld \
+  -m=filename-no-opt -b=STM32F479 -n=8
+/home/clemen19/open_source_code/ACES/compiler/graph_analysis/analyzer.py:812: SyntaxWarning: name 'MAX_DATA_REGIONS' is assigned to before global declaration
+  global MAX_DATA_REGIONS
+Merging By filename, Opt:  False
+Data min_cost ('.DATA_REGION_9_', '.DATA_REGION_6_', 2)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+Data min_cost (None, None, None)
+/home/clemen19/open_source_code/ACES/gcc/bins//bin/arm-none-eabi-ld .build/startup_stm32f469xx.o bin/FatFs-uSD--filename-no-opt--mpu-8.elf.0.5.precodegen.bc /home/clemen19/open_source_code/ACES/llvm/hexbox-rt-lib/record-hexbox-rt-v7e-m.o -plugin=/home/clemen19/open_source_code/ACES/llvm/bins/lib/LLVMgold.so --plugin-opt=save-temps -g --plugin-opt=-mcpu=cortex-m4 --plugin-opt=-float-abi=soft --plugin-opt=O0 --start-group -lc -lm -lgcc --end-group -L /home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/lib/thumb/v7e-m -L /home/clemen19/open_source_code/ACES/gcc/bins//lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m  -lc -lm  -Map=.build/FatFs-uSD--filename-no-opt--mpu-8.map --gc-sections \
+    --plugin-opt=-info-output-file=bin/FatFs-uSD--filename-no-opt--mpu-8--hexbox--inter.elf.stats \
+    --plugin-opt=-hexbox-policy=.build/hexbox/hexbox-policy--filename-no-opt--mpu-8.json \
+    -T.build/hexbox/hexbox-intermediate--filename-no-opt--mpu-8.ld \
+    -o bin/FatFs-uSD--filename-no-opt--mpu-8--hexbox--inter.elf
+----------- Building Meta Data --------------------
+Function: main
+Callee: HAL_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: FATFS_LinkDriver
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_mount
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_mkfs
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_open
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_close
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_open
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_close
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: FATFS_UnLinkDriver
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_Init
+Callee: HAL_NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_OscConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_PWREx_EnableOverDrive
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCCEx_PeriphCLKConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_ClockConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: mfxstm32l152_ReadID
+----------- End metadata --------------------
+i16
+i32
+i16
+i8
+i16
+i8
+i16
+%struct.FATFS*
+i16
+%struct.HAL_SD_CardInfoTypedef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+i32
+i16
+i8
+i16
+i8
+i16
+i8
+i16
+%struct.I2C_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+i32
+i16
+i32
+i16
+i32
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+i32
+i16
+i32
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: mfxstm32l152_Init
+Callee: mfxstm32l152_Reset
+Callee: mfxstm32l152_IO_EnableIT
+Callee: mfxstm32l152_IO_DisableIT
+----------- End metadata --------------------
+i16
+i32
+i16
+i8*
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.GPIO_TypeDef*
+i16
+i8
+i16
+i16
+i32
+i8
+i16
+i16
+i32
+i8
+i16
+i16
+i32
+i8
+i16
+i16
+i32
+i8
+i16
+i32
+i16
+i32
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: mfxstm32l152_IO_Start
+Callee: mfxstm32l152_IO_ClearIT
+----------- End metadata --------------------
+i16
+%struct.FATFS*
+i16
+i8*
+i16
+%struct.FIL*
+i16
+i8
+i16
+%struct.FATFS*
+i16
+%struct.FATFS**
+i16
+%struct.Diskio_drvTypeDef*
+i16
+i8
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+i32
+----------- Building Meta Data --------------------
+Function: BSP_IO_ConfigPin
+Callee: mfxstm32l152_IO_Config
+----------- End metadata --------------------
+i16
+%struct.GPIO_TypeDef*
+i16
+i8*
+i16
+i8*
+i16
+i8
+i16
+i16
+i32
+i8
+i16
+i8
+----------- Building Meta Data --------------------
+Function: BSP_IO_WritePin
+Callee: mfxstm32l152_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Error_Handler
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_initialize
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: get_fattime
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_open
+Callee: get_fattime
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_write
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_write
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_write
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_read
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_read
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_read
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_On
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: validate
+Callee: disk_status
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+%struct.FIL*
+i8
+i32*
+i8
+i32*
+i8
+%struct.I2C_HandleTypeDef*
+----------- Building Meta Data --------------------
+Function: disk_read
+Callee: disk_read
+Callee: disk_write
+Callee: SD_read
+Callee: SD_write
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+%struct.FIL*
+i8
+i32*
+i8
+i32*
+i8
+%struct.I2C_HandleTypeDef*
+----------- Building Meta Data --------------------
+Function: disk_write
+Callee: disk_read
+Callee: disk_write
+Callee: SD_read
+Callee: SD_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: move_window
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_window
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_window
+Callee: disk_write
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+i8*
+i8
+i8*
+i8
+%struct.FATFS*
+i8
+%struct.FIL*
+i8
+i32
+i8
+%struct.FATFS*
+i8
+%struct.DIR*
+i8
+%struct.DIR*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+i16
+i8
+%struct.RCC_OscInitTypeDef.7*
+i8
+%struct.RCC_PeriphCLKInitTypeDef*
+i8
+i32
+i8
+%struct.exception_frame*
+----------- Building Meta Data --------------------
+Function: disk_status
+Callee: disk_status
+Callee: disk_initialize
+Callee: SD_initialize
+Callee: SD_status
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_sync
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_sync
+Callee: get_fattime
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_fs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_fs
+Callee: disk_ioctl
+----------- End metadata --------------------
+i8
+%struct.FATFS*
+i8
+i8*
+i8
+%struct.FIL*
+i8
+%struct.FATFS*
+i8
+%struct.FATFS**
+i8
+%struct.Diskio_drvTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+i16
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+i32
+----------- Building Meta Data --------------------
+Function: disk_ioctl
+Callee: disk_ioctl
+Callee: SD_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: find_volume
+Callee: disk_status
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: find_volume
+Callee: disk_initialize
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+i8*
+i8
+i8*
+i8
+%struct.FATFS*
+i8
+%struct.FIL*
+i8
+i32
+i8
+%struct.FATFS*
+i8
+%struct.DIR*
+i8
+%struct.DIR*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+i16
+i8
+%struct.RCC_OscInitTypeDef.7*
+i8
+%struct.RCC_PeriphCLKInitTypeDef*
+i8
+i32
+i8
+%struct.exception_frame*
+----------- Building Meta Data --------------------
+Function: disk_initialize
+Callee: disk_status
+Callee: disk_initialize
+Callee: SD_initialize
+Callee: SD_status
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_initialize
+Callee: BSP_SD_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_status
+Callee: BSP_SD_GetStatus
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_read
+Callee: BSP_SD_ReadBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_write
+Callee: BSP_SD_WriteBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_ioctl
+Callee: BSP_SD_GetCardInfo
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_GetCardInfo
+Callee: HAL_SD_Get_CardInfo
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_WriteBlocks
+Callee: HAL_SD_WriteBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_DataConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp1Error
+Callee: SDIO_GetCommandResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp1Error
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_StopTransfer
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_IsCardProgramming
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_IsCardProgramming
+Callee: SDIO_GetCommandResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_IsCardProgramming
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_ReadBlocks
+Callee: HAL_SD_ReadBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_DataConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_GetStatus
+Callee: HAL_SD_GetStatus
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_SendStatus
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_SendStatus
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: BSP_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: HAL_SD_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: HAL_SD_WideBusOperation_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IsDetected
+Callee: BSP_IO_ReadPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IsDetected
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IsDetected
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_DeInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_DeInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_Init
+Callee: SDIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_Init
+Callee: SDIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WideBusOperation_Config
+Callee: SDIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Enable
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Enable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Enable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Disable
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Disable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Disable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_DataConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_PowerState_ON
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetPowerState
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Select_Deselect
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp6Error
+Callee: SDIO_GetCommandResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp6Error
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_GetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_EncodePriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_EnableIRQ
+Callee: NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_DMA_Init
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_DMA_Init
+Callee: HAL_GetTick
+----------- End metadata --------------------
+i16
+i32
+i16
+%struct.FIL*
+i16
+%struct.FATFS*
+i16
+%struct.FATFS*
+i16
+%struct.FATFS*
+i16
+%struct.FATFS*
+i16
+%struct.DIR*
+i16
+i8*
+----------- Building Meta Data --------------------
+Function: BSP_IO_ReadPin
+Callee: mfxstm32l152_IO_ReadPin
+Callee: mfxstm32l152_IO_ITStatus
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_Init
+Callee: MFX_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_ReadID
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_ReadID
+Callee: MFX_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_ReadID
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_Reset
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_Reset
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_Start
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_Start
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_Start
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ReadPin
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ReadPin
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ReadPin
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_EnableIT
+Callee: MFX_IO_ITConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ITStatus
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ITStatus
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ITStatus
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ClearIT
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ClearIT
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ClearIT
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Write
+Callee: HAL_I2C_Mem_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_I2C_Mem_Write
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Error
+Callee: HAL_I2C_DeInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Init
+Callee: HAL_I2C_GetState
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Init
+Callee: HAL_I2C_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_I2C_Init
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnTXEFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnBTFFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnMasterAddressFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Read
+Callee: HAL_I2C_Mem_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_I2C_Mem_Read
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnRXNEFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_DisableITSource
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_DisableITSource
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_ITConfig
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_ITConfig
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_ITConfig
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_EnableITSource
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_EnableITSource
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_SetIrqEvtMode
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_SetIrqTypeMode
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_Delay
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinPolarity
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinPolarity
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinPolarity
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinType
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinType
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinType
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_InitTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_SYSTICK_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SYSTICK_Config
+Callee: SysTick_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriorityGrouping
+Callee: NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SysTick_Handler
+Callee: HAL_IncTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: DMA2_Stream3_IRQHandler
+Callee: BSP_SD_DMA_Rx_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_DMA_Rx_IRQHandler
+Callee: HAL_DMA_IRQHandler
+----------- End metadata --------------------
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+----------- Building Meta Data --------------------
+Function: DMA2_Stream6_IRQHandler
+Callee: BSP_SD_DMA_Tx_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_DMA_Tx_IRQHandler
+Callee: HAL_DMA_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SDIO_IRQHandler
+Callee: BSP_SD_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IRQHandler
+Callee: HAL_SD_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: __original_main
+----------- End metadata --------------------
+No Name GV for: "runtime"
+python /home/clemen19/open_source_code/ACES/compiler/graph_analysis/final_linker_gen.py -o=bin/FatFs-uSD--filename-no-opt--mpu-8--hexbox--inter.elf \
+		-t=STM32F469NIHx_FLASH.ld -l=.build/hexbox/hexbox-final--filename-no-opt--mpu-8.ld -p=.build/hexbox/hexbox-policy--filename-no-opt--mpu-8.json\
+		-f=.build/hexbox/hexbox-final-policy--filename-no-opt--mpu-8.json
+['bin/FatFs-uSD--filename-no-opt--mpu-8--hexbox--inter.elf  :', 'section                   size        addr', '.isr_vector                440   134217728', '.text                     3080   134218168', '.hexbox_rt_code           4072   134221248', '.rodata                   7784   134225328', '.ARM                         8   134233112', '.data                        0   536875008', '.hexbox_rt_ram            2156   536875008', '.CODE_REGION_0_           9042   134233120', '.CODE_REGION_10_           340   134242162', '.CODE_REGION_11_          4042   134242504', '.CODE_REGION_12_           484   134246546', '.CODE_REGION_13_           290   134247030', '.CODE_REGION_14_           974   134247320', '.CODE_REGION_15_          1248   134248294', '.CODE_REGION_16_           428   134249542', '.CODE_REGION_17_           260   134249970', '.CODE_REGION_18_           380   134250230', '.CODE_REGION_19_          1106   134250610', '.CODE_REGION_1_            218   134251716', '.CODE_REGION_20_         13802   134251934', '.CODE_REGION_21_          1812   134265736', '.CODE_REGION_2_            474   134267548', '.CODE_REGION_3_           4594   134268022', '.CODE_REGION_4_            586   134272616', '.CODE_REGION_5_           1210   134273202', '.CODE_REGION_6_             38   134274412', '.CODE_REGION_7_           3940   134274450', '.CODE_REGION_8_             94   134278390', '.CODE_REGION_9_           1644   134278484', '.IRQ_CODE_REGION           120   134280128', '.stack                    4096   536870912', '.ccmram                      0   268435456', '.bss                         4   536877164', '._user_heap_stack          512   536877168', '.DATA_REGION_0__data         0   536877680', '.DATA_REGION_0__bss       1120   536877680', '.DATA_REGION_10__data       44   536878800', '.DATA_REGION_10__bss         4   536878844', '.DATA_REGION_11__data      172   536878848', '.DATA_REGION_11__bss        32   536879020', '.DATA_REGION_12__data        8   536879052', '.DATA_REGION_12__bss         0   536879060', '.DATA_REGION_1__data        16   536879060', '.DATA_REGION_1__bss         88   536879076', '.DATA_REGION_2__data         0   536879164', '.DATA_REGION_2__bss        380   536879168', '.DATA_REGION_3__data         0   536879548', '.DATA_REGION_3__bss          4   536879548', '.DATA_REGION_4__data         0   536879552', '.DATA_REGION_4__bss         12   536879552', '.DATA_REGION_5__data         0   536879564', '.DATA_REGION_5__bss          4   536879564', '.DATA_REGION_6__data         4   536879568', '.DATA_REGION_6__bss          0   536879572', '.DATA_REGION_7__data         0   536879572', '.DATA_REGION_7__bss          0   536879572', '.DATA_REGION_8__data        24   536879572', '.DATA_REGION_8__bss          0   536879596', '.DATA_REGION_9__data        16   536879596', '.DATA_REGION_9__bss          0   536879612', '.ARM.attributes             50           0', '.debug_info              50862           0', '.debug_abbrev             1749           0', '.debug_aranges              40           0', '.debug_line              41628           0', '.debug_str               19045           0', '.debug_loc                3873           0', '.debug_ranges             1112           0', '.debug_macinfo               1           0', '.debug_pubnames           6582           0', '.debug_pubtypes           4228           0', '.comment                    21           0', '.debug_frame              6064           0', 'Total                   206461', '', '', '']
+Default section not present in final binary
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+.CODE_REGION_9_
+Getting MPU Config:  .CODE_REGION_9_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 10
+Size field value: 8
+Size field value: 9
+Size field value: 14
+.CODE_REGION_12_
+Getting MPU Config:  .CODE_REGION_12_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 8
+.CODE_REGION_8_
+Getting MPU Config:  .CODE_REGION_8_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 6
+Size field value: 19
+Size field value: 9
+.CODE_REGION_11_
+Getting MPU Config:  .CODE_REGION_11_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 11
+Size field value: 6
+.DATA_REGION_5_
+.CODE_REGION_10_
+Getting MPU Config:  .CODE_REGION_10_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 8
+Size field value: 4
+.DATA_REGION_8_
+.DATA_REGION_4_
+.CODE_REGION_20_
+Getting MPU Config:  .CODE_REGION_20_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 13
+Size field value: 7
+.CODE_REGION_21_
+Getting MPU Config:  .CODE_REGION_21_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 10
+Size field value: 4
+Size field value: 4
+.DATA_REGION_0_
+.CODE_REGION_17_
+Getting MPU Config:  .CODE_REGION_17_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 8
+Size field value: 4
+Size field value: 4
+Size field value: 9
+.DATA_REGION_9_
+.CODE_REGION_16_
+Getting MPU Config:  .CODE_REGION_16_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 8
+Size field value: 19
+.CODE_REGION_15_
+Getting MPU Config:  .CODE_REGION_15_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 10
+Size field value: 6
+Size field value: 9
+Size field value: 12
+Size field value: 9
+.DATA_REGION_12_
+.CODE_REGION_14_
+Getting MPU Config:  .CODE_REGION_14_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 9
+Size field value: 4
+Size field value: 10
+Size field value: 9
+Size field value: 9
+.DATA_REGION_7_
+.CODE_REGION_13_
+Getting MPU Config:  .CODE_REGION_13_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 8
+Size field value: 9
+Size field value: 9
+.DATA_REGION_3_
+.CODE_REGION_2_
+Getting MPU Config:  .CODE_REGION_2_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 8
+Size field value: 4
+.DATA_REGION_10_
+.DATA_REGION_1_
+.CODE_REGION_5_
+Getting MPU Config:  .CODE_REGION_5_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 10
+Size field value: 4
+Size field value: 4
+Size field value: 9
+Size field value: 9
+.CODE_REGION_4_
+Getting MPU Config:  .CODE_REGION_4_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 9
+Size field value: 4
+.CODE_REGION_7_
+Getting MPU Config:  .CODE_REGION_7_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 11
+Size field value: 9
+Size field value: 15
+Size field value: 9
+.IRQ_CODE_REGION
+Getting MPU Config:  .IRQ_CODE_REGION
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 6
+Size field value: 19
+.CODE_REGION_6_
+Getting MPU Config:  .CODE_REGION_6_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 5
+.DATA_REGION_11_
+.DATA_REGION_2_
+.CODE_REGION_1_
+Getting MPU Config:  .CODE_REGION_1_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 7
+.CODE_REGION_0_
+Getting MPU Config:  .CODE_REGION_0_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 13
+Size field value: 11
+.CODE_REGION_19_
+Getting MPU Config:  .CODE_REGION_19_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 10
+Size field value: 10
+Size field value: 9
+Size field value: 12
+Size field value: 11
+.DATA_REGION_6_
+.CODE_REGION_3_
+Getting MPU Config:  .CODE_REGION_3_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 12
+.CODE_REGION_18_
+Getting MPU Config:  .CODE_REGION_18_
+Default section not present in final binary
+Size field value: 31
+Size field value: 13
+Size field value: 11
+Size field value: 8
+Size field value: 4
+Size field value: 6
+/home/clemen19/open_source_code/ACES/gcc/bins//bin/arm-none-eabi-ld .build/startup_stm32f469xx.o bin/FatFs-uSD--filename-no-opt--mpu-8.elf.0.5.precodegen.bc /home/clemen19/open_source_code/ACES/llvm/hexbox-rt-lib/record-hexbox-rt-v7e-m.o -plugin=/home/clemen19/open_source_code/ACES/llvm/bins/lib/LLVMgold.so --plugin-opt=save-temps -g --plugin-opt=-mcpu=cortex-m4 --plugin-opt=-float-abi=soft --plugin-opt=O0 --start-group -lc -lm -lgcc --end-group -L /home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/lib/thumb/v7e-m -L /home/clemen19/open_source_code/ACES/gcc/bins//lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m  -lc -lm  -Map=.build/FatFs-uSD--filename-no-opt--mpu-8.map --gc-sections \
+    --plugin-opt=-info-output-file=bin/FatFs-uSD--filename-no-opt--mpu-8--hexbox--record.elf.stats \
+    --plugin-opt=-hexbox-policy=.build/hexbox/hexbox-final-policy--filename-no-opt--mpu-8.json \
+    -T.build/hexbox/hexbox-final--filename-no-opt--mpu-8.ld \
+    -o bin/FatFs-uSD--filename-no-opt--mpu-8--hexbox--record.elf
+----------- Building Meta Data --------------------
+Function: main
+Callee: HAL_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: FATFS_LinkDriver
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_mount
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_mkfs
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_open
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_close
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_open
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_close
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: FATFS_UnLinkDriver
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_Init
+Callee: HAL_NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_OscConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_PWREx_EnableOverDrive
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCCEx_PeriphCLKConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_ClockConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: mfxstm32l152_ReadID
+----------- End metadata --------------------
+i16
+i32
+i16
+i8
+i16
+i8
+i16
+%struct.FATFS*
+i16
+%struct.HAL_SD_CardInfoTypedef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+i32
+i16
+i8
+i16
+i8
+i16
+i8
+i16
+%struct.I2C_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+i32
+i16
+i32
+i16
+i32
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+i32
+i16
+i32
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: mfxstm32l152_Init
+Callee: mfxstm32l152_Reset
+Callee: mfxstm32l152_IO_EnableIT
+Callee: mfxstm32l152_IO_DisableIT
+----------- End metadata --------------------
+i16
+i32
+i16
+i8*
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.GPIO_TypeDef*
+i16
+i8
+i16
+i16
+i32
+i8
+i16
+i16
+i32
+i8
+i16
+i16
+i32
+i8
+i16
+i16
+i32
+i8
+i16
+i32
+i16
+i32
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: mfxstm32l152_IO_Start
+Callee: mfxstm32l152_IO_ClearIT
+----------- End metadata --------------------
+i16
+%struct.FATFS*
+i16
+i8*
+i16
+%struct.FIL*
+i16
+i8
+i16
+%struct.FATFS*
+i16
+%struct.FATFS**
+i16
+%struct.Diskio_drvTypeDef*
+i16
+i8
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+i32
+----------- Building Meta Data --------------------
+Function: BSP_IO_ConfigPin
+Callee: mfxstm32l152_IO_Config
+----------- End metadata --------------------
+i16
+%struct.GPIO_TypeDef*
+i16
+i8*
+i16
+i8*
+i16
+i8
+i16
+i16
+i32
+i8
+i16
+i8
+----------- Building Meta Data --------------------
+Function: BSP_IO_WritePin
+Callee: mfxstm32l152_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Error_Handler
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_initialize
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: get_fattime
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_open
+Callee: get_fattime
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_write
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_write
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_write
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_read
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_read
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_read
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_On
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: validate
+Callee: disk_status
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+%struct.FIL*
+i8
+i32*
+i8
+i32*
+i8
+%struct.I2C_HandleTypeDef*
+----------- Building Meta Data --------------------
+Function: disk_read
+Callee: disk_read
+Callee: disk_write
+Callee: SD_read
+Callee: SD_write
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+%struct.FIL*
+i8
+i32*
+i8
+i32*
+i8
+%struct.I2C_HandleTypeDef*
+----------- Building Meta Data --------------------
+Function: disk_write
+Callee: disk_read
+Callee: disk_write
+Callee: SD_read
+Callee: SD_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: move_window
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_window
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_window
+Callee: disk_write
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+i8*
+i8
+i8*
+i8
+%struct.FATFS*
+i8
+%struct.FIL*
+i8
+i32
+i8
+%struct.FATFS*
+i8
+%struct.DIR*
+i8
+%struct.DIR*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+i16
+i8
+%struct.RCC_OscInitTypeDef.7*
+i8
+%struct.RCC_PeriphCLKInitTypeDef*
+i8
+i32
+i8
+%struct.exception_frame*
+----------- Building Meta Data --------------------
+Function: disk_status
+Callee: disk_status
+Callee: disk_initialize
+Callee: SD_initialize
+Callee: SD_status
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_sync
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_sync
+Callee: get_fattime
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_fs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_fs
+Callee: disk_ioctl
+----------- End metadata --------------------
+i8
+%struct.FATFS*
+i8
+i8*
+i8
+%struct.FIL*
+i8
+%struct.FATFS*
+i8
+%struct.FATFS**
+i8
+%struct.Diskio_drvTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+i16
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+i32
+----------- Building Meta Data --------------------
+Function: disk_ioctl
+Callee: disk_ioctl
+Callee: SD_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: find_volume
+Callee: disk_status
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: find_volume
+Callee: disk_initialize
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+i8*
+i8
+i8*
+i8
+%struct.FATFS*
+i8
+%struct.FIL*
+i8
+i32
+i8
+%struct.FATFS*
+i8
+%struct.DIR*
+i8
+%struct.DIR*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+i16
+i8
+%struct.RCC_OscInitTypeDef.7*
+i8
+%struct.RCC_PeriphCLKInitTypeDef*
+i8
+i32
+i8
+%struct.exception_frame*
+----------- Building Meta Data --------------------
+Function: disk_initialize
+Callee: disk_status
+Callee: disk_initialize
+Callee: SD_initialize
+Callee: SD_status
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_initialize
+Callee: BSP_SD_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_status
+Callee: BSP_SD_GetStatus
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_read
+Callee: BSP_SD_ReadBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_write
+Callee: BSP_SD_WriteBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_ioctl
+Callee: BSP_SD_GetCardInfo
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_GetCardInfo
+Callee: HAL_SD_Get_CardInfo
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_WriteBlocks
+Callee: HAL_SD_WriteBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_DataConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp1Error
+Callee: SDIO_GetCommandResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp1Error
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_StopTransfer
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_IsCardProgramming
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_IsCardProgramming
+Callee: SDIO_GetCommandResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_IsCardProgramming
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_ReadBlocks
+Callee: HAL_SD_ReadBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_DataConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_GetStatus
+Callee: HAL_SD_GetStatus
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_SendStatus
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_SendStatus
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: BSP_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: HAL_SD_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: HAL_SD_WideBusOperation_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IsDetected
+Callee: BSP_IO_ReadPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IsDetected
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IsDetected
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_DeInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_DeInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_Init
+Callee: SDIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_Init
+Callee: SDIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WideBusOperation_Config
+Callee: SDIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Enable
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Enable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Enable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Disable
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Disable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Disable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_DataConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_PowerState_ON
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetPowerState
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Select_Deselect
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp6Error
+Callee: SDIO_GetCommandResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp6Error
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_GetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_EncodePriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_EnableIRQ
+Callee: NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_DMA_Init
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_DMA_Init
+Callee: HAL_GetTick
+----------- End metadata --------------------
+i16
+i32
+i16
+%struct.FIL*
+i16
+%struct.FATFS*
+i16
+%struct.FATFS*
+i16
+%struct.FATFS*
+i16
+%struct.FATFS*
+i16
+%struct.DIR*
+i16
+i8*
+----------- Building Meta Data --------------------
+Function: BSP_IO_ReadPin
+Callee: mfxstm32l152_IO_ReadPin
+Callee: mfxstm32l152_IO_ITStatus
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_Init
+Callee: MFX_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_ReadID
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_ReadID
+Callee: MFX_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_ReadID
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_Reset
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_Reset
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_Start
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_Start
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_Start
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ReadPin
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ReadPin
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ReadPin
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_EnableIT
+Callee: MFX_IO_ITConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ITStatus
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ITStatus
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ITStatus
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ClearIT
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ClearIT
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ClearIT
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Write
+Callee: HAL_I2C_Mem_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_I2C_Mem_Write
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Error
+Callee: HAL_I2C_DeInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Init
+Callee: HAL_I2C_GetState
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Init
+Callee: HAL_I2C_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_I2C_Init
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnTXEFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnBTFFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnMasterAddressFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Read
+Callee: HAL_I2C_Mem_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_I2C_Mem_Read
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnRXNEFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_DisableITSource
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_DisableITSource
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_ITConfig
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_ITConfig
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_ITConfig
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_EnableITSource
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_EnableITSource
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_SetIrqEvtMode
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_SetIrqTypeMode
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_Delay
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinPolarity
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinPolarity
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinPolarity
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinType
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinType
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinType
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_InitTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_SYSTICK_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SYSTICK_Config
+Callee: SysTick_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriorityGrouping
+Callee: NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SysTick_Handler
+Callee: HAL_IncTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: DMA2_Stream3_IRQHandler
+Callee: BSP_SD_DMA_Rx_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_DMA_Rx_IRQHandler
+Callee: HAL_DMA_IRQHandler
+----------- End metadata --------------------
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+----------- Building Meta Data --------------------
+Function: DMA2_Stream6_IRQHandler
+Callee: BSP_SD_DMA_Tx_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_DMA_Tx_IRQHandler
+Callee: HAL_DMA_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SDIO_IRQHandler
+Callee: BSP_SD_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IRQHandler
+Callee: HAL_SD_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: __original_main
+----------- End metadata --------------------
+No Name GV for: "runtime"
+/home/clemen19/open_source_code/ACES/llvm/bins/bin/clang -c -mcpu=cortex-m4 -mfloat-abi=soft -DUSE_HAL_DRIVER -DSTM32F469xx -DUSE_STM32469I_EVAL -DUSE_IOEXPANDER -I../../Inc -I../../../../../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../../../../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../../../../../Drivers/BSP/STM32469I_EVAL -I../../../../../../../Middlewares/Third_Party/FatFs/src -I../../../../../../../Middlewares/Third_Party/FatFs/src/drivers -I../../../../../../../Drivers/CMSIS/Include -I/home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/include -O0 -Wall -fdata-sections -ffunction-sections -target arm-none-eabi -mthumb --sysroot=/home/clemen19/open_source_code/ACES/gcc/bins/arm-none-eabi -fno-builtin -fshort-enums -fno-exceptions -flto -ffreestanding -fmessage-length=0 -ffunction-sections -g -g -gdwarf-2 mem_accesses--filename-no-opt--mpu-8.s -o .build/hexbox/mem_accesses--filename-no-opt--mpu-8.o
+clang-4.0: warning: argument unused during compilation: '-D USE_HAL_DRIVER' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-D STM32F469xx' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-D USE_STM32469I_EVAL' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-D USE_IOEXPANDER' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-fdata-sections' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-ffunction-sections' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-mthumb' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-fno-builtin' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-fshort-enums' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-fno-exceptions' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-ffreestanding' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-fmessage-length=0' [-Wunused-command-line-argument]
+clang-4.0: warning: argument unused during compilation: '-ffunction-sections' [-Wunused-command-line-argument]
+mem_accesses--filename-no-opt--mpu-8.s:1:1: warning: DWARF2 only supports one section per compilation unit
+.section  .rodata.HexboxAccessList
+^
+/home/clemen19/open_source_code/ACES/gcc/bins//bin/arm-none-eabi-ld .build/startup_stm32f469xx.o .build/hexbox/mem_accesses--filename-no-opt--mpu-8.o bin/FatFs-uSD--filename-no-opt--mpu-8.elf.0.5.precodegen.bc /home/clemen19/open_source_code/ACES/llvm/hexbox-rt-lib/enforce-hexbox-rt-v7e-m.o -plugin=/home/clemen19/open_source_code/ACES/llvm/bins/lib/LLVMgold.so --plugin-opt=save-temps -g --plugin-opt=-mcpu=cortex-m4 --plugin-opt=-float-abi=soft --plugin-opt=O0 --start-group -lc -lm -lgcc --end-group -L /home/clemen19/open_source_code/ACES/gcc/bins//arm-none-eabi/lib/thumb/v7e-m -L /home/clemen19/open_source_code/ACES/gcc/bins//lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m  -lc -lm  -Map=.build/FatFs-uSD--filename-no-opt--mpu-8.map --gc-sections \
+    --plugin-opt=-info-output-file=bin/FatFs-uSD--filename-no-opt--mpu-8--hexbox--final.elf.stats \
+    --plugin-opt=-hexbox-policy=.build/hexbox/hexbox-final-policy--filename-no-opt--mpu-8.json \
+    -T.build/hexbox/hexbox-final--filename-no-opt--mpu-8.ld \
+    -o bin/FatFs-uSD--filename-no-opt--mpu-8--hexbox--final.elf
+----------- Building Meta Data --------------------
+Function: main
+Callee: HAL_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: FATFS_LinkDriver
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_mount
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_mkfs
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_open
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_close
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_open
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: f_close
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: FATFS_UnLinkDriver
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_Init
+Callee: HAL_NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_OscConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_PWREx_EnableOverDrive
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCCEx_PeriphCLKConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SystemClock_Config
+Callee: HAL_RCC_ClockConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_Init
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: mfxstm32l152_ReadID
+----------- End metadata --------------------
+i16
+i32
+i16
+i8
+i16
+i8
+i16
+%struct.FATFS*
+i16
+%struct.HAL_SD_CardInfoTypedef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+i32
+i16
+i8
+i16
+i8
+i16
+i8
+i16
+%struct.I2C_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+i32
+i16
+i32
+i16
+i32
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.SD_HandleTypeDef*
+i16
+i32
+i16
+i32
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: mfxstm32l152_Init
+Callee: mfxstm32l152_Reset
+Callee: mfxstm32l152_IO_EnableIT
+Callee: mfxstm32l152_IO_DisableIT
+----------- End metadata --------------------
+i16
+i32
+i16
+i8*
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.GPIO_TypeDef*
+i16
+i8
+i16
+i16
+i32
+i8
+i16
+i16
+i32
+i8
+i16
+i16
+i32
+i8
+i16
+i16
+i32
+i8
+i16
+i32
+i16
+i32
+----------- Building Meta Data --------------------
+Function: BSP_IO_Init
+Callee: mfxstm32l152_IO_Start
+Callee: mfxstm32l152_IO_ClearIT
+----------- End metadata --------------------
+i16
+%struct.FATFS*
+i16
+i8*
+i16
+%struct.FIL*
+i16
+i8
+i16
+%struct.FATFS*
+i16
+%struct.FATFS**
+i16
+%struct.Diskio_drvTypeDef*
+i16
+i8
+i16
+%struct.SD_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+%struct.I2C_HandleTypeDef*
+i16
+i32
+----------- Building Meta Data --------------------
+Function: BSP_IO_ConfigPin
+Callee: mfxstm32l152_IO_Config
+----------- End metadata --------------------
+i16
+%struct.GPIO_TypeDef*
+i16
+i8*
+i16
+i8*
+i16
+i8
+i16
+i16
+i32
+i8
+i16
+i8
+----------- Building Meta Data --------------------
+Function: BSP_IO_WritePin
+Callee: mfxstm32l152_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: Error_Handler
+Callee: BSP_LED_On
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_initialize
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: get_fattime
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_mkfs
+Callee: disk_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_open
+Callee: get_fattime
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_write
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_write
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_write
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_read
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_read
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_read
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_LED_On
+Callee: HAL_GPIO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: validate
+Callee: disk_status
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+%struct.FIL*
+i8
+i32*
+i8
+i32*
+i8
+%struct.I2C_HandleTypeDef*
+----------- Building Meta Data --------------------
+Function: disk_read
+Callee: disk_read
+Callee: disk_write
+Callee: SD_read
+Callee: SD_write
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+%struct.FIL*
+i8
+i32*
+i8
+i32*
+i8
+%struct.I2C_HandleTypeDef*
+----------- Building Meta Data --------------------
+Function: disk_write
+Callee: disk_read
+Callee: disk_write
+Callee: SD_read
+Callee: SD_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: move_window
+Callee: disk_read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_window
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_window
+Callee: disk_write
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+i8*
+i8
+i8*
+i8
+%struct.FATFS*
+i8
+%struct.FIL*
+i8
+i32
+i8
+%struct.FATFS*
+i8
+%struct.DIR*
+i8
+%struct.DIR*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+i16
+i8
+%struct.RCC_OscInitTypeDef.7*
+i8
+%struct.RCC_PeriphCLKInitTypeDef*
+i8
+i32
+i8
+%struct.exception_frame*
+----------- Building Meta Data --------------------
+Function: disk_status
+Callee: disk_status
+Callee: disk_initialize
+Callee: SD_initialize
+Callee: SD_status
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_sync
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: f_sync
+Callee: get_fattime
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_fs
+Callee: disk_write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: sync_fs
+Callee: disk_ioctl
+----------- End metadata --------------------
+i8
+%struct.FATFS*
+i8
+i8*
+i8
+%struct.FIL*
+i8
+%struct.FATFS*
+i8
+%struct.FATFS**
+i8
+%struct.Diskio_drvTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+i16
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+i32
+----------- Building Meta Data --------------------
+Function: disk_ioctl
+Callee: disk_ioctl
+Callee: SD_ioctl
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: find_volume
+Callee: disk_status
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: find_volume
+Callee: disk_initialize
+----------- End metadata --------------------
+i8
+%struct.FIL*
+i8
+i8*
+i8
+i8*
+i8
+%struct.FATFS*
+i8
+%struct.FIL*
+i8
+i32
+i8
+%struct.FATFS*
+i8
+%struct.DIR*
+i8
+%struct.DIR*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SDIO_TypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.SD_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+%struct.I2C_HandleTypeDef*
+i8
+i16
+i8
+%struct.RCC_OscInitTypeDef.7*
+i8
+%struct.RCC_PeriphCLKInitTypeDef*
+i8
+i32
+i8
+%struct.exception_frame*
+----------- Building Meta Data --------------------
+Function: disk_initialize
+Callee: disk_status
+Callee: disk_initialize
+Callee: SD_initialize
+Callee: SD_status
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_initialize
+Callee: BSP_SD_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_status
+Callee: BSP_SD_GetStatus
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_read
+Callee: BSP_SD_ReadBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_write
+Callee: BSP_SD_WriteBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_ioctl
+Callee: BSP_SD_GetCardInfo
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_GetCardInfo
+Callee: HAL_SD_Get_CardInfo
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_WriteBlocks
+Callee: HAL_SD_WriteBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_DataConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WriteBlocks
+Callee: SDIO_WriteFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp1Error
+Callee: SDIO_GetCommandResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp1Error
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_StopTransfer
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_IsCardProgramming
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_IsCardProgramming
+Callee: SDIO_GetCommandResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_IsCardProgramming
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_ReadBlocks
+Callee: HAL_SD_ReadBlocks
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_DataConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_ReadBlocks
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_GetStatus
+Callee: HAL_SD_GetStatus
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_SendStatus
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_SendStatus
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: BSP_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: HAL_SD_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_Init
+Callee: HAL_SD_WideBusOperation_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IsDetected
+Callee: BSP_IO_ReadPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IsDetected
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IsDetected
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_ConfigPin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: BSP_IO_WritePin
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_DeInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_DeInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_DMA_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_Init
+Callee: SDIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_Init
+Callee: SDIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SD_WideBusOperation_Config
+Callee: SDIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Enable
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Enable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Enable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Disable
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Disable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_WideBus_Disable
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_DataConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_FindSCR
+Callee: SDIO_ReadFIFO
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_PowerState_ON
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_PowerON
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetPowerState
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Initialize_Cards
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_Select_Deselect
+Callee: SDIO_SendCommand
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp6Error
+Callee: SDIO_GetCommandResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SD_CmdResp6Error
+Callee: SDIO_GetResponse
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_GetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_EncodePriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriority
+Callee: NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_EnableIRQ
+Callee: NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_DMA_Init
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_DMA_Init
+Callee: HAL_GetTick
+----------- End metadata --------------------
+i16
+i32
+i16
+%struct.FIL*
+i16
+%struct.FATFS*
+i16
+%struct.FATFS*
+i16
+%struct.FATFS*
+i16
+%struct.FATFS*
+i16
+%struct.DIR*
+i16
+i8*
+----------- Building Meta Data --------------------
+Function: BSP_IO_ReadPin
+Callee: mfxstm32l152_IO_ReadPin
+Callee: mfxstm32l152_IO_ITStatus
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_Init
+Callee: MFX_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_ReadID
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_ReadID
+Callee: MFX_IO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_ReadID
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_Reset
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_Reset
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_Start
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_Start
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_Start
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ReadPin
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ReadPin
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ReadPin
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_EnableIT
+Callee: MFX_IO_ITConfig
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ITStatus
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ITStatus
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ITStatus
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ClearIT
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ClearIT
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_ClearIT
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Write
+Callee: HAL_I2C_Mem_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_I2C_Mem_Write
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Error
+Callee: HAL_I2C_DeInit
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Init
+Callee: HAL_I2C_GetState
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Init
+Callee: HAL_I2C_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_MspInit
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_I2C_Init
+Callee: HAL_RCC_GetPCLK1Freq
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnTXEFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnBTFFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnMasterAddressFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2Cx_Read
+Callee: HAL_I2C_Mem_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_I2C_Mem_Read
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: I2C_WaitOnRXNEFlagUntilTimeout
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_DisableITSource
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_DisableITSource
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_ITConfig
+Callee: HAL_GPIO_Init
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_ITConfig
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_ITConfig
+Callee: HAL_NVIC_EnableIRQ
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_EnableITSource
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_EnableITSource
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_reg24_setPinValue
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_SetIrqEvtMode
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_IO_SetIrqTypeMode
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: MFX_IO_Delay
+Callee: HAL_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinPolarity
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinPolarity
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinPolarity
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinType
+Callee: MFX_IO_Read
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinType
+Callee: MFX_IO_Write
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: mfxstm32l152_SetIrqOutPinType
+Callee: MFX_IO_Delay
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_OscConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_PWREx_EnableOverDrive
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCCEx_PeriphCLKConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_GetTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_RCC_ClockConfig
+Callee: HAL_InitTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_SYSTICK_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_InitTick
+Callee: HAL_NVIC_SetPriority
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_SYSTICK_Config
+Callee: SysTick_Config
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: HAL_NVIC_SetPriorityGrouping
+Callee: NVIC_SetPriorityGrouping
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SysTick_Handler
+Callee: HAL_IncTick
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: DMA2_Stream3_IRQHandler
+Callee: BSP_SD_DMA_Rx_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_DMA_Rx_IRQHandler
+Callee: HAL_DMA_IRQHandler
+----------- End metadata --------------------
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.FATFS*
+%struct.__DMA_HandleTypeDef*
+%struct.HAL_SD_CardInfoTypedef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i16
+%struct.__DMA_HandleTypeDef*
+i8
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.I2C_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+%struct.SD_HandleTypeDef*
+%struct.__DMA_HandleTypeDef*
+i32
+%struct.__DMA_HandleTypeDef*
+i32
+----------- Building Meta Data --------------------
+Function: DMA2_Stream6_IRQHandler
+Callee: BSP_SD_DMA_Tx_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_DMA_Tx_IRQHandler
+Callee: HAL_DMA_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: SDIO_IRQHandler
+Callee: BSP_SD_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: BSP_SD_IRQHandler
+Callee: HAL_SD_IRQHandler
+----------- End metadata --------------------
+----------- Building Meta Data --------------------
+Function: main
+Callee: __original_main
+----------- End metadata --------------------
+No Name GV for: "runtime"
