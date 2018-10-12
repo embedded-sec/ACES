@@ -1,5 +1,15 @@
-# ACES
-This repo contains the scripts and tools to setup the ACES project.  See our paper in Usenix Security 2018.
+# ACES: Automatic Compartments for Embedded Systems
+
+
+This is was joint research effort between Purdues's [HexHive](http://hexhive.github.io/) and [DCSL](https://engineering.purdue.edu/dcsl/) research groups.  It is presented at [USENIX Security 2018](https://www.usenix.org/conference/usenixsecurity18/presentation/clements)
+
+Both have many more open sourced software:
+*  [HexHive Software](https://github.com/HexHive)
+*  [DCSL Software](https://github.com/purdue-dcsl)
+
+
+
+It has been tested on Ubuntu 16.04 other versions of linux may work.
 
 
 ## Dependencies
@@ -37,7 +47,7 @@ ci_scripts/init_project.sh
 ci_scripts/ci-build.sh
 ```
 This will setup the directory structure, build a arm-none-eabi-ld with plug-in support (builds all gcc)
-and build the ACES compiler with (i.e., LLVM with ACES extension).
+and build the ACES compiler.  Which is an extension of LLVM.
 
 The resulting directory structure will be as follows.
 
@@ -63,8 +73,8 @@ REPO_ROOT
 
 ## Building an Application
 
-All test applications are require the STM32469I-EVAL board from STM, with the exception of Pinlock which runs on
-the STM32F4-Discovery board. Make sure arm-none-eabi-gdb-py is in your path, if it was build with gcc and can be 
+All test applications require the STM32469I-EVAL board from STM, with the exception of Pinlock which runs on
+the STM32F4-Discovery board. Make sure arm-none-eabi-gdb-py is in your path, if not it was build with gcc and can be 
 found in <REPO_ROOT>/gcc/bins/bin
 
 You will need to perform the following steps to build the code
@@ -95,9 +105,9 @@ cd test_apps/pinlock/Decode/SW4STM32/STM32F4-DISCO
 
 This requires that openocd be running and connected to the board.  You will also need to run the driver application which sends a series of valid and invalid pins to the board.
 
-Connect 3.3V Serial port to Discovery Board RX PA2, TX PA3 from Computers perspective.
-Run Stimulus Script
+Connect 3.3V Serial port to Discovery Board RX PA2, TX PA3.  Where TX and RX are from the computers perspective.
 
+Run Stimulus Script
 ```
 python <REPO_ROOT>/test_apps/pinlock/pyterm/pinlock_stimulus.py
 ```
@@ -122,16 +132,16 @@ python {REPO_ROOT}/compiler/tools/built_tools/CubeMX2Makefile.py . <path to repo
 
 #### Run Binaries in record mode and build final binaries
 
-This will run the record binaries on the board to generate the white lists then build the final binaries with enforce mode enabled.  It requires that openocd be running and connected to the board.
+This will run the record binaries on the board to generate the white-lists then build the final binaries with enforce mode enabled.  It requires that openocd be running and connected to the board.
 ```
 cd test_apps/pinlock/Decode/SW4STM32/STM32F4-DISCO
 APP_NAME=<one of [FatFs-uSD, TCP-Echo, LCD-uSD, Animation]> {REPO_ROOT}/compiler/tools/build_final.sh record run
 ```
 
 
-For TCP Echo
+For TCP Echo,
 
-Need to have IP address set to 192.168.0.11
+Need to connect an ethernet cable to the EVAL board and set computers IP address to 192.168.0.11/24
 
 Run 
 ```
