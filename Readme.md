@@ -1,7 +1,7 @@
 # ACES: Automatic Compartments for Embedded Systems
 
 
-This is was joint research effort between Purdues's [HexHive](http://hexhive.github.io/) and [DCSL](https://engineering.purdue.edu/dcsl/) research groups.  It is presented at [USENIX Security 2018](https://www.usenix.org/conference/usenixsecurity18/presentation/clements)
+This is was joint research effort between Purdue's [HexHive](http://hexhive.github.io/) and [DCSL](https://engineering.purdue.edu/dcsl/) research groups.  It is presented at [USENIX Security 2018](https://www.usenix.org/conference/usenixsecurity18/presentation/clements)
 
 Both have many more open sourced software:
 *  [HexHive Software](https://github.com/HexHive)
